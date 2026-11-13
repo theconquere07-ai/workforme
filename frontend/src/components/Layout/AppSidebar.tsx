@@ -339,6 +339,36 @@ export function AppSidebar({
             </a>
           </div>
         </div>
+
+        {/* SECTION 4: INTERNET OPPORTUNITY MAP (Standalone Platform) */}
+        <div>
+          {!collapsed && (
+            <div
+              style={{
+                fontSize: '9.5px',
+                fontWeight: 600,
+                color: '#62677b',
+                letterSpacing: '0.1em',
+                textTransform: 'uppercase',
+                padding: '0 8px 6px',
+                fontFamily: "'Martian Mono', monospace",
+              }}
+            >
+              Territory & Capital
+            </div>
+          )}
+
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '3px' }}>
+            <NavItem
+              to="/opportunity-map"
+              collapsed={collapsed}
+              icon="🌐"
+              label="Opportunity Map"
+              badge="6 ENGINES"
+              badgeColor="#4ade80"
+            />
+          </div>
+        </div>
       </div>
 
       {/* Sidebar Footer Controls */}

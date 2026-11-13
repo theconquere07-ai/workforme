@@ -299,6 +299,50 @@ export function ExecutiveSidebar({
           gap: '10px',
         }}
       >
+        {/* Direct Link to Opportunity Map Platform */}
+        <button
+          onClick={() => navigate('/opportunity-map')}
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            padding: '8px 12px',
+            borderRadius: '8px',
+            background: 'rgba(34, 197, 94, 0.08)',
+            border: '1px solid rgba(34, 197, 94, 0.25)',
+            color: '#4ade80',
+            fontSize: '11.5px',
+            fontWeight: 600,
+            cursor: 'pointer',
+            transition: 'all 0.15s ease',
+            width: '100%',
+          }}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.background = 'rgba(34, 197, 94, 0.18)';
+            e.currentTarget.style.borderColor = '#22c55e';
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.background = 'rgba(34, 197, 94, 0.08)';
+            e.currentTarget.style.borderColor = 'rgba(34, 197, 94, 0.25)';
+          }}
+        >
+          <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+            <span>🌐</span>
+            <span>Opportunity Map</span>
+          </div>
+          <span
+            style={{
+              fontSize: '9.5px',
+              background: 'rgba(34, 197, 94, 0.2)',
+              padding: '1px 5px',
+              borderRadius: '4px',
+              fontFamily: "'Martian Mono', monospace",
+            }}
+          >
+            6 ENGINES
+          </span>
+        </button>
+
         <div style={{ display: 'flex', gap: '8px' }}>
           <button
             onClick={onOpenEdit}

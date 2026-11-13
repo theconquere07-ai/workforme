@@ -15,6 +15,7 @@ import { ShowcaseCMSPage } from './pages/workspace/ShowcaseCMSPage';
 import { StoragePage } from './pages/workspace/StoragePage';
 import { AvisPage } from './pages/workspace/AvisPage';
 import { ExecutivePortal } from './pages/executive/ExecutivePortal';
+import { OpportunityPortal } from './pages/opportunity/OpportunityPortal';
 import { PublicShowcase } from './components/Showcase/PublicShowcase';
 import { PublicDocSharePage } from './pages/public/PublicDocSharePage';
 
@@ -114,6 +115,27 @@ export default function App() {
             element={
               <PrivateWorkspaceWrapper onIntro={() => setShowIntro(true)}>
                 <ExecutivePortal />
+              </PrivateWorkspaceWrapper>
+            }
+          />
+
+          {/* ======================================================== */}
+          {/* WEBSITE 4: INTERNET OPPORTUNITY MAP PLATFORM (Standalone)*/}
+          {/* 6 Capital Engines, Sub-Tracks, Cashflow & Territory Map  */}
+          {/* ======================================================== */}
+          <Route
+            path="/opportunity-map"
+            element={
+              <PrivateWorkspaceWrapper onIntro={() => setShowIntro(true)}>
+                <OpportunityPortal />
+              </PrivateWorkspaceWrapper>
+            }
+          />
+          <Route
+            path="/opportunity"
+            element={
+              <PrivateWorkspaceWrapper onIntro={() => setShowIntro(true)}>
+                <OpportunityPortal />
               </PrivateWorkspaceWrapper>
             }
           />
